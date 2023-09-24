@@ -69,6 +69,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\Products\Components\Components.cs" />
+    <Compile Include="Model\Products\Components\CPU.cs" />
+    <Compile Include="Model\Products\Components\GPU.cs" />
+    <Compile Include="Model\Products\Components\RAM.cs" />
+    <Compile Include="Model\Products\Devices\Device.cs" />
+    <Compile Include="Model\Products\Devices\Keyboard.cs" />
+    <Compile Include="Model\Products\Devices\Mouse.cs" />
+    <Compile Include="Model\Products\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -93,6 +101,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controller\" />
+    <Folder Include="View\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
