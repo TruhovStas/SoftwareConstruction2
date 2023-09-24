@@ -15,7 +15,7 @@ namespace SoftwareConstruction2.Model.Products.Components
         {
             return base.GetDescription() + $"\nFrequency: {Frequency}\nCores amount: {Cores}\nThread amount: {Threads}";
         }
-        public CPU(string name, double price, string man, double fr, int cores, int threads) : base(name, price, man) 
+        public CPU(int id, string name, double price, string man, double fr, int cores, int threads) : base(id, name, price, man) 
         {
             Frequency = fr;
             Cores = cores;

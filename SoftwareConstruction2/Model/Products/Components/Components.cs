@@ -8,6 +8,6 @@ namespace SoftwareConstruction2.Model.Products.Components
 {
     abstract class Components : Product
     {
-        public Components(string name, double price, string man) : base(name, price, man) { }
+        public Components(int id, string name, double price, string man) : base(id, name, price, man) { }
     }
 }

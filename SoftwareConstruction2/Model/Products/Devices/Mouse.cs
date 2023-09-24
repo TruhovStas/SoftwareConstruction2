@@ -12,9 +12,9 @@ namespace SoftwareConstruction2.Model.Devices
         public int ButtonsAmount { get; set; }
         public override string GetDescription()
         {
-            return base.GetDescription() + $"\nResponse time: {Response}sec.\nAmount of buttons: {ButtonsAmount}";
+            return base.GetDescription() + $"\nResponse time: {Response} ms.\nAmount of buttons: {ButtonsAmount}";
         }
-        public Mouse(string name, double price, string man, double response, int buttonsAmount) : base(name, price, man)
+        public Mouse(int id, string name, double price, string man, double response, int buttonsAmount) : base(id, name, price, man)
         {
             Response = response;
             ButtonsAmount = buttonsAmount;

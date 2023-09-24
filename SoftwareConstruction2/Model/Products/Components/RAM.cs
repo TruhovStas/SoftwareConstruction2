@@ -15,7 +15,8 @@ namespace SoftwareConstruction2.Model.Products.Components
         {
             return base.GetDescription() + $"\nFrequency: {Frequency}\nCapacity: {Capacity}\nMemory type: {MemoryType}";
         }
-        public RAM(string name, double price, string man, double frequency, int capacity, MemoryTypes memoryType) : base(name, price, man)
+        public RAM(int id, string name, double price, string man, double frequency, int capacity, MemoryTypes memoryType) :
+            base(id, name, price, man)
         {
             Frequency = frequency;
             Capacity = capacity;

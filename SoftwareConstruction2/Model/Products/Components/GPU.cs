@@ -19,8 +19,8 @@ namespace SoftwareConstruction2.Model.Products.Components
             string rtx = RTX ? "\nRTX cores" + RTXCores.ToString() : "";
             return base.GetDescription() + $"\nFrequency: {Frequency}\nVRAM: {VRAM}\nCuda cores: {CudaCores}\nTensor cores:{TensorCores}" + rtx;
         }
-        public GPU(string name, double price, string man, double frequency, int vRAM, int cudaCores, bool rTX, int rTXCores, int tensorCores) : 
-            base(name, price, man)
+        public GPU(int id, string name, double price, string man, double frequency, int vRAM, int cudaCores, bool rTX, int rTXCores, int tensorCores) :
+            base(id, name, price, man)
         {
             Frequency = frequency;
             VRAM = vRAM;

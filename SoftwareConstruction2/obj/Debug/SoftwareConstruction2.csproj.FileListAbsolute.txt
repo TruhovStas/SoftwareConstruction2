@@ -14,3 +14,19 @@ C:\Users\Stas\Desktop\c#\SoftwareConstruction2\SoftwareConstruction2\obj\Debug\S
 C:\Users\Stas\Desktop\c#\SoftwareConstruction2\SoftwareConstruction2\obj\Debug\SoftwareConstruction2.csproj.CoreCompileInputs.cache
 C:\Users\Stas\Desktop\c#\SoftwareConstruction2\SoftwareConstruction2\obj\Debug\SoftwareConstruction2.exe
 C:\Users\Stas\Desktop\c#\SoftwareConstruction2\SoftwareConstruction2\obj\Debug\SoftwareConstruction2.pdb
+C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\bin\Debug\SoftwareConstruction2.exe.config
+C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\bin\Debug\SoftwareConstruction2.exe
+C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\bin\Debug\SoftwareConstruction2.pdb
+C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\obj\Debug\SoftwareConstruction2.csproj.AssemblyReference.cache
+C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\obj\Debug\SoftwareConstruction2.csproj.SuggestedBindingRedirects.cache
+C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\obj\Debug\SoftwareConstruction2_MarkupCompile.cache
+C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\obj\Debug\SoftwareConstruction2_MarkupCompile.lref
+C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\obj\Debug\SoftwareConstruction2.g.resources
+C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\obj\Debug\SoftwareConstruction2.Properties.Resources.resources
+C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\obj\Debug\SoftwareConstruction2.csproj.GenerateResource.cache
+C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\obj\Debug\SoftwareConstruction2.csproj.CoreCompileInputs.cache
+C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\obj\Debug\SoftwareConstruction2.exe
+C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\obj\Debug\SoftwareConstruction2.pdb
+C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\obj\Debug\View\MainWindow.g.cs
+C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\obj\Debug\View\App.g.cs
+C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\obj\Debug\View\MainWindow.baml

@@ -1,4 +1,5 @@
 ﻿using SoftwareConstruction2.Model.Devices;
+using SoftwareConstruction2.Model.Products.Components;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using SoftwareConstruction2.Controller;
+using SoftwareConstruction2.Conroller;
 
 namespace SoftwareConstruction2
 {
@@ -23,8 +26,11 @@ namespace SoftwareConstruction2
         public MainWindow()
         {
             InitializeComponent();
-            Keyboard k = new Keyboard("Bloody", 0, "Bloody", 100, true, KeyboardTypes.Membrane);
-            label1.Content = k.Description;
+            for(int i = 1; i < 10; i++) 
+            {
+                Fabric.CreateMouse();
+                TextBox1.Text +=  ProductList.GetProduct(i).Description + "\n\n";
+            }
         }
     }
 }

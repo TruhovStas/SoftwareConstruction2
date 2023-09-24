@@ -16,7 +16,8 @@ namespace SoftwareConstruction2.Model.Devices
             string rus = HasRussianKeys ? "+" : "-";
             return base.GetDescription() + $"\nKeyboard type: {KeyboardType}\nSize: {Size}%\nRussian keys: {rus}";
         }
-        public Keyboard(string name, double price, string man, int size, bool hasr, KeyboardTypes type) : base(name, price, man) 
+        public Keyboard(int id, string name, double price, string man, int size, bool hasr, KeyboardTypes type) : 
+            base(id, name, price, man) 
         {
             Size = size;
             HasRussianKeys = hasr;
