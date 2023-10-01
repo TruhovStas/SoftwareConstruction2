@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace SoftwareConstruction2.Model.Devices
 {
@@ -14,7 +15,13 @@ namespace SoftwareConstruction2.Model.Devices
         {
             return base.GetDescription() + $"\nResponse time: {Response} ms.\nAmount of buttons: {ButtonsAmount}";
         }
-        public Mouse(int id, string name, double price, string man, double response, int buttonsAmount) : base(id, name, price, man)
+        public override List<string> GetDescriptionInList()
+        {
+            var x = base.GetDescriptionInList();
+            x.AddRange(new List<string>() { ConnectionType.ToString(), Response.ToString(), ButtonsAmount.ToString()});
+            return x;
+        }
+        public Mouse(int id, string name, double price, string man, ConnectionTypes type, double response, int buttonsAmount) : base(id, name, price, man, type)
         {
             Response = response;
             ButtonsAmount = buttonsAmount;

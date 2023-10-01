@@ -9,7 +9,7 @@ using ProductList;
 
 namespace SoftwareConstruction2.Controller
 {
-    public static class MouseFabric
+    public static class RandomMouse
     {
         private static List<string> ManName = new List<string>()
         {
@@ -20,7 +20,7 @@ namespace SoftwareConstruction2.Controller
         public static void CreateMouse()
         {
             string man = ManName[ran.Next(7)];
-            ProductList.ProductList.AddToList(new Mouse(IdCounter, RandomName(man), ran.Next(1, 100), man, ran.Next(1, 100), ran.Next(2, 10)));
+            ProductList.ProductList.AddToList(new Mouse(IdCounter, RandomName(man), ran.Next(1, 100), man, ConnectionTypes.USB, ran.Next(1, 100), ran.Next(2, 10)));
             IdCounter++;
         }
         private static string RandomName(string man)

@@ -13,14 +13,14 @@ namespace TestProject
         [TestMethod]
         public void TestMethod1()
         {
-            Mouse m = new Mouse(1, "mouse", 10, "Bloody", 0.1, 5);
+            Mouse m = new Mouse(1, "mouse", 10, "Bloody", ConnectionTypes.USB, 0.1, 5);
             string desc = m.Description;
             Assert.IsNotNull(desc);
         }
         [TestMethod]
         public void TestMethod2()
         {
-            Mouse m = new Mouse(1, "mouse", 10, "Bloody", 0.1, 5);
+            Mouse m = new Mouse(1, "mouse", 10, "Bloody", ConnectionTypes.USB, 0.1, 5);
             ProductList.ProductList.AddToList(m);
             Product result1 = ProductList.ProductList.GetProduct(1);
             Product result2 = ProductList.ProductList.GetProduct("mouse");
@@ -29,7 +29,7 @@ namespace TestProject
         [TestMethod]
         public void TestMethod3()
         {
-            MouseFabric.CreateMouse();
+            RandomMouse.CreateMouse();
             List<Product> products = ProductList.ProductList.GetAllProducts();
             Assert.IsNotNull(products);
         }

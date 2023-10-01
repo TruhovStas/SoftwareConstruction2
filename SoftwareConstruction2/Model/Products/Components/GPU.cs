@@ -19,6 +19,13 @@ namespace SoftwareConstruction2.Model.Products.Components
             string rtx = RTX ? "\nRTX cores" + RTXCores.ToString() : "";
             return base.GetDescription() + $"\nFrequency: {Frequency}\nVRAM: {VRAM}\nCuda cores: {CudaCores}\nTensor cores:{TensorCores}" + rtx;
         }
+        public override List<string> GetDescriptionInList()
+        {
+            var x = base.GetDescriptionInList();
+            x.AddRange(new List<string>() { Frequency.ToString(), VRAM.ToString(), CudaCores.ToString(),
+            RTX.ToString(), RTXCores.ToString(), TensorCores.ToString()});
+            return x;
+        }
         public GPU(int id, string name, double price, string man, double frequency, int vRAM, int cudaCores, bool rTX, int rTXCores, int tensorCores) :
             base(id, name, price, man)
         {

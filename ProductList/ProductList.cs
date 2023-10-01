@@ -39,6 +39,11 @@ namespace ProductList
             return $"ID: {Id}\nName: {Name}\nPrice: {CalculateSale()} р.\nManufacturer: {Manufacturer}";
         }
 
+        public virtual List<string> GetDescriptionInList()
+        {
+            return new List<string>() {Id.ToString(), Name, Price.ToString(), Manufacturer };
+        }
+
         public Product(int id, string name, double price, string man)
         {
             Name = name;

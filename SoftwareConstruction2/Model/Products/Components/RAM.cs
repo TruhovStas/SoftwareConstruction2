@@ -15,6 +15,12 @@ namespace SoftwareConstruction2.Model.Products.Components
         {
             return base.GetDescription() + $"\nFrequency: {Frequency}\nCapacity: {Capacity}\nMemory type: {MemoryType}";
         }
+        public override List<string> GetDescriptionInList()
+        {
+            var x = base.GetDescriptionInList();
+            x.AddRange(new List<string>() { Frequency.ToString(), Capacity.ToString(), MemoryType.ToString() });
+            return x;
+        }
         public RAM(int id, string name, double price, string man, double frequency, int capacity, MemoryTypes memoryType) :
             base(id, name, price, man)
         {

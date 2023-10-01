@@ -12,7 +12,10 @@ namespace SoftwareConstruction2.Model.Devices
     public abstract class Device : Product
     {
         public ConnectionTypes ConnectionType { get; set; }
-        public Device(int id, string name, double price, string man) : base(id, name, price, man) { }
+        public Device(int id, string name, double price, string man, ConnectionTypes type) : base(id, name, price, man) 
+        {
+            this.ConnectionType = type;
+        }
     }
     public enum ConnectionTypes { USB, TypeC, Bluetooth }
 }

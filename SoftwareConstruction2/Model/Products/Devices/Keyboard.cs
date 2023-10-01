@@ -15,9 +15,17 @@ namespace SoftwareConstruction2.Model.Devices
         {
             string rus = HasRussianKeys ? "+" : "-";
             return base.GetDescription() + $"\nKeyboard type: {KeyboardType}\nSize: {Size}%\nRussian keys: {rus}";
+
         }
-        public Keyboard(int id, string name, double price, string man, int size, bool hasr, KeyboardTypes type) : 
-            base(id, name, price, man) 
+        public override List<string> GetDescriptionInList()
+        {
+            var x = base.GetDescriptionInList();
+            x.AddRange(new List<string>() { ConnectionType.ToString(), KeyboardType.ToString(), Size.ToString(),
+            HasRussianKeys.ToString()});
+            return x;
+        }
+        public Keyboard(int id, string name, double price, string man, ConnectionTypes cType, int size, bool hasr, KeyboardTypes type) : 
+            base(id, name, price, man, cType) 
         {
             Size = size;
             HasRussianKeys = hasr;

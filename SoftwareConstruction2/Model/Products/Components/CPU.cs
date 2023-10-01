@@ -15,6 +15,12 @@ namespace SoftwareConstruction2.Model.Products.Components
         {
             return base.GetDescription() + $"\nFrequency: {Frequency}\nCores amount: {Cores}\nThread amount: {Threads}";
         }
+        public override List<string> GetDescriptionInList()
+        { 
+            var x = base.GetDescriptionInList();
+            x.AddRange(new List<string>() { Frequency.ToString(), Cores.ToString(), Threads.ToString() });
+            return x ;
+        }
         public CPU(int id, string name, double price, string man, double fr, int cores, int threads) : base(id, name, price, man) 
         {
             Frequency = fr;
