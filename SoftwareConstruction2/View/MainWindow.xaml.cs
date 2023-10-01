@@ -40,7 +40,7 @@ namespace SoftwareConstruction2
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            if (TextBox1.Text == string.Empty)
+            if (TextBox1.Text != string.Empty)
             {
                 TextBox1.Text = string.Empty;
                 foreach (Product i in ProductList.ProductList.GetAllProducts())
@@ -61,7 +61,7 @@ namespace SoftwareConstruction2
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            OpenFileDialog fileDialog = new OpenFileDialog();
+            SaveFileDialog fileDialog = new SaveFileDialog();
             fileDialog.ShowDialog();
             string path = fileDialog.FileName;
             FileReader.WriteToTextFile(ProductList.ProductList.GetProduct(int.Parse(TextBox1.Text)), path);
