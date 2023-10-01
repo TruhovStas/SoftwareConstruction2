@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace SoftwareConstruction2.Model.Devices
 {
-    abstract class Device : Product
+    public abstract class Device : Product
     {
         public ConnectionTypes ConnectionType { get; set; }
         public Device(int id, string name, double price, string man) : base(id, name, price, man) { }
     }
-    enum ConnectionTypes { USB, TypeC, Bluetooth }
+    public enum ConnectionTypes { USB, TypeC, Bluetooth }
 }

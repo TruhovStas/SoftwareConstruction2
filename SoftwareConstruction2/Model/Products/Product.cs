@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SoftwareConstruction2.Model.Products
 {
-    abstract class Product
+    public abstract class Product
     {
         public int Id { get; set; }
         public string Name { get; set; }

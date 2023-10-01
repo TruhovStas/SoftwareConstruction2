@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SoftwareConstruction2.Model.Devices
 {
-    internal class Keyboard : Device
+    public class Keyboard : Device
     {
         public KeyboardTypes KeyboardType { get; set; }
         public int Size { get; set; }
@@ -25,5 +25,5 @@ namespace SoftwareConstruction2.Model.Devices
         }
     }
 
-    enum KeyboardTypes { Membrane, Mechanical, Optical }
+    public enum KeyboardTypes { Membrane, Mechanical, Optical }
 }

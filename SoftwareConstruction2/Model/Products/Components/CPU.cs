@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SoftwareConstruction2.Model.Products.Components
 {
-    internal class CPU : Components
+    public class CPU : Components
     {
         public double Frequency { get; set; }
         public int Cores { get; set; }

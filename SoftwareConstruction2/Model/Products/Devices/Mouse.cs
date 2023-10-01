@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SoftwareConstruction2.Model.Devices
 {
-    internal class Mouse : Device
+    public class Mouse : Device
     {
         public double Response { get; set; }
         public int ButtonsAmount { get; set; }

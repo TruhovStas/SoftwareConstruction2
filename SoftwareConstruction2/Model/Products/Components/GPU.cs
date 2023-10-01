@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SoftwareConstruction2.Model.Products.Components
 {
-    internal class GPU : Components
+    public class GPU : Components
     {
         public double Frequency { get; set; }
         public int VRAM { get; set; }

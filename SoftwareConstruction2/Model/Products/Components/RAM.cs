@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SoftwareConstruction2.Model.Products.Components
 {
-    internal class RAM : Components
+    public class RAM : Components
     {
         public double Frequency { get; set; }
         public int Capacity { get; set; }
@@ -24,5 +24,5 @@ namespace SoftwareConstruction2.Model.Products.Components
         }
     }
 
-    enum MemoryTypes { DDR3, DDR4, DDR5 }
+    public enum MemoryTypes { DDR3, DDR4, DDR5 }
 }

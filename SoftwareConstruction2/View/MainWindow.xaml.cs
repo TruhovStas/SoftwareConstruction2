@@ -14,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using SoftwareConstruction2.Controller;
-using SoftwareConstruction2.Conroller;
+using SoftwareConstruction2.Model.Products;
 
 namespace SoftwareConstruction2
 {
@@ -26,10 +26,20 @@ namespace SoftwareConstruction2
         public MainWindow()
         {
             InitializeComponent();
-            for(int i = 1; i < 10; i++) 
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MouseFabric.CreateMouse();
+            TextBox1.Text += "Объект успешно создан\n";
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            TextBox1.Text = string.Empty;
+            foreach (Product i in ProductList.GetAllProducts())
             {
-                Fabric.CreateMouse();
-                TextBox1.Text +=  ProductList.GetProduct(i).Description + "\n\n";
+                TextBox1.Text += i.Description + "\n\n";
             }
         }
     }

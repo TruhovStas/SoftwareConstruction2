@@ -7,7 +7,7 @@ using SoftwareConstruction2.Model.Products;
 
 namespace SoftwareConstruction2.Controller
 {
-    internal static class ProductList
+    public static class ProductList
     {
         private static List<Product> productList = new List<Product>();
 
