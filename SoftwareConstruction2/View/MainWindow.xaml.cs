@@ -15,6 +15,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using SoftwareConstruction2.Controller;
 using SoftwareConstruction2.Model.Products;
+using ProductList;
 
 namespace SoftwareConstruction2
 {
@@ -37,7 +38,7 @@ namespace SoftwareConstruction2
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             TextBox1.Text = string.Empty;
-            foreach (Product i in ProductList.GetAllProducts())
+            foreach (Product i in ProductList.ProductList.GetAllProducts())
             {
                 TextBox1.Text += i.Description + "\n\n";
             }

@@ -50,6 +50,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ProductList">
+      <HintPath>..\ProductList\bin\Debug\ProductList.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -88,12 +91,10 @@
     <Compile Include="Model\Products\Components\Components.cs" />
     <Compile Include="Model\Products\Components\CPU.cs" />
     <Compile Include="Model\Products\Components\GPU.cs" />
-    <Compile Include="Conroller\ProductList.cs" />
     <Compile Include="Model\Products\Components\RAM.cs" />
     <Compile Include="Model\Products\Devices\Device.cs" />
     <Compile Include="Model\Products\Devices\Keyboard.cs" />
     <Compile Include="Model\Products\Devices\Mouse.cs" />
-    <Compile Include="Model\Products\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

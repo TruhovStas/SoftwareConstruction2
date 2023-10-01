@@ -1,0 +1,6 @@
+C:\Лабы\5 сем\SoftwareConstruction2\ProductList\bin\Debug\ProductList.dll
+C:\Лабы\5 сем\SoftwareConstruction2\ProductList\bin\Debug\ProductList.pdb
+C:\Лабы\5 сем\SoftwareConstruction2\ProductList\obj\Debug\ProductList.csproj.AssemblyReference.cache
+C:\Лабы\5 сем\SoftwareConstruction2\ProductList\obj\Debug\ProductList.csproj.CoreCompileInputs.cache
+C:\Лабы\5 сем\SoftwareConstruction2\ProductList\obj\Debug\ProductList.dll
+C:\Лабы\5 сем\SoftwareConstruction2\ProductList\obj\Debug\ProductList.pdb

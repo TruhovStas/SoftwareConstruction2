@@ -22,3 +22,5 @@ C:\Лабы\5 сем\SoftwareConstruction2\UnitTestProject\bin\Debug\Microsoft.V
 C:\Лабы\5 сем\SoftwareConstruction2\UnitTestProject\obj\Debug\UnitTestProject.csproj.CopyComplete
 C:\Лабы\5 сем\SoftwareConstruction2\UnitTestProject\obj\Debug\UnitTestProject.dll
 C:\Лабы\5 сем\SoftwareConstruction2\UnitTestProject\obj\Debug\UnitTestProject.pdb
+C:\Лабы\5 сем\SoftwareConstruction2\UnitTestProject\bin\Debug\ProductList.dll
+C:\Лабы\5 сем\SoftwareConstruction2\UnitTestProject\bin\Debug\ProductList.pdb

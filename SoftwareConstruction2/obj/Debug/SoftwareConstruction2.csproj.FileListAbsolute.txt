@@ -30,3 +30,6 @@ C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\obj\Debug\Softw
 C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\obj\Debug\View\MainWindow.g.cs
 C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\obj\Debug\View\App.g.cs
 C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\obj\Debug\View\MainWindow.baml
+C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\bin\Debug\ProductList.dll
+C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\bin\Debug\ProductList.pdb
+C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\obj\Debug\SoftwareConstruction2.csproj.CopyComplete
