@@ -24,29 +24,3 @@ C:\Лабы\5 сем\SoftwareConstruction2\UnitTestProject\obj\Debug\UnitTestPro
 C:\Лабы\5 сем\SoftwareConstruction2\UnitTestProject\obj\Debug\UnitTestProject.pdb
 C:\Лабы\5 сем\SoftwareConstruction2\UnitTestProject\bin\Debug\ProductList.dll
 C:\Лабы\5 сем\SoftwareConstruction2\UnitTestProject\bin\Debug\ProductList.pdb
-C:\Users\Stas\Desktop\c#\SoftwareConstruction2\UnitTestProject\bin\Debug\ru\Microsoft.TestPlatform.AdapterUtilities.resources.dll
-C:\Users\Stas\Desktop\c#\SoftwareConstruction2\UnitTestProject\bin\Debug\ru\Microsoft.TestPlatform.CoreUtilities.resources.dll
-C:\Users\Stas\Desktop\c#\SoftwareConstruction2\UnitTestProject\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
-C:\Users\Stas\Desktop\c#\SoftwareConstruction2\UnitTestProject\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
-C:\Users\Stas\Desktop\c#\SoftwareConstruction2\UnitTestProject\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
-C:\Users\Stas\Desktop\c#\SoftwareConstruction2\UnitTestProject\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
-C:\Users\Stas\Desktop\c#\SoftwareConstruction2\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
-C:\Users\Stas\Desktop\c#\SoftwareConstruction2\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
-C:\Users\Stas\Desktop\c#\SoftwareConstruction2\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
-C:\Users\Stas\Desktop\c#\SoftwareConstruction2\UnitTestProject\bin\Debug\Microsoft.TestPlatform.AdapterUtilities.dll
-C:\Users\Stas\Desktop\c#\SoftwareConstruction2\UnitTestProject\bin\Debug\UnitTestProject.dll
-C:\Users\Stas\Desktop\c#\SoftwareConstruction2\UnitTestProject\bin\Debug\UnitTestProject.pdb
-C:\Users\Stas\Desktop\c#\SoftwareConstruction2\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
-C:\Users\Stas\Desktop\c#\SoftwareConstruction2\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
-C:\Users\Stas\Desktop\c#\SoftwareConstruction2\UnitTestProject\bin\Debug\ProductList.dll
-C:\Users\Stas\Desktop\c#\SoftwareConstruction2\UnitTestProject\bin\Debug\SoftwareConstruction2.exe
-C:\Users\Stas\Desktop\c#\SoftwareConstruction2\UnitTestProject\bin\Debug\SoftwareConstruction2.pdb
-C:\Users\Stas\Desktop\c#\SoftwareConstruction2\UnitTestProject\bin\Debug\SoftwareConstruction2.exe.config
-C:\Users\Stas\Desktop\c#\SoftwareConstruction2\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
-C:\Users\Stas\Desktop\c#\SoftwareConstruction2\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
-C:\Users\Stas\Desktop\c#\SoftwareConstruction2\UnitTestProject\bin\Debug\ProductList.pdb
-C:\Users\Stas\Desktop\c#\SoftwareConstruction2\UnitTestProject\obj\Debug\UnitTestProject.csproj.AssemblyReference.cache
-C:\Users\Stas\Desktop\c#\SoftwareConstruction2\UnitTestProject\obj\Debug\UnitTestProject.csproj.CoreCompileInputs.cache
-C:\Users\Stas\Desktop\c#\SoftwareConstruction2\UnitTestProject\obj\Debug\UnitTestProject.csproj.CopyComplete
-C:\Users\Stas\Desktop\c#\SoftwareConstruction2\UnitTestProject\obj\Debug\UnitTestProject.dll
-C:\Users\Stas\Desktop\c#\SoftwareConstruction2\UnitTestProject\obj\Debug\UnitTestProject.pdb

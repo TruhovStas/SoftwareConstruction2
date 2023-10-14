@@ -39,15 +39,11 @@ namespace SoftwareConstruction2
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-<<<<<<< HEAD
             try
             {
                 TextBox1.Text = ProductList.GetProduct(int.Parse(TextBox1.Text)).Description;
             }
             catch
-=======
-            if (TextBox1.Text != string.Empty)
->>>>>>> af6b0d5cf03fc139a6fb708c7b0a4466c59a2650
             {
                 TextBox1.Text = string.Empty;
                 foreach (Product i in ProductList.GetAllProducts())
@@ -81,7 +77,6 @@ namespace SoftwareConstruction2
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
             SaveFileDialog fileDialog = new SaveFileDialog();
-<<<<<<< HEAD
             if ((bool)fileDialog.ShowDialog())
             {
                 try
@@ -106,11 +101,6 @@ namespace SoftwareConstruction2
                     TextBox1.Text = "Введите ID продукта";
                 }
             }
-=======
-            fileDialog.ShowDialog();
-            string path = fileDialog.FileName;
-            FileReader.WriteToTextFile(ProductList.ProductList.GetProduct(int.Parse(TextBox1.Text)), path);
->>>>>>> af6b0d5cf03fc139a6fb708c7b0a4466c59a2650
         }
 
 
