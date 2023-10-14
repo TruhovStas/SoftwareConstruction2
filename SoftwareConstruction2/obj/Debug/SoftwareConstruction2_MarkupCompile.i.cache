@@ -4,17 +4,22 @@
 winexe
 C#
 .cs
-C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\obj\Debug\
+C:\Users\Stas\Desktop\c#\SoftwareConstruction2\SoftwareConstruction2\obj\Debug\
 SoftwareConstruction2
 none
 false
 DEBUG;TRACE
-C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\View\App.xaml
+C:\Users\Stas\Desktop\c#\SoftwareConstruction2\SoftwareConstruction2\View\App.xaml
 1871162140
 
+<<<<<<< HEAD
 18-1800058412
 141985133474
+=======
+16234848151
+14-1921468942
+>>>>>>> af6b0d5cf03fc139a6fb708c7b0a4466c59a2650
 View\MainWindow.xaml;
 
-False
+True
 
