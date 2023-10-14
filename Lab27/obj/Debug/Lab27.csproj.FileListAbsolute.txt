@@ -1,0 +1,8 @@
+C:\Лабы\5 сем\SoftwareConstruction2\Lab27\bin\Debug\Lab27.exe.config
+C:\Лабы\5 сем\SoftwareConstruction2\Lab27\bin\Debug\Lab27.exe
+C:\Лабы\5 сем\SoftwareConstruction2\Lab27\bin\Debug\Lab27.pdb
+C:\Лабы\5 сем\SoftwareConstruction2\Lab27\obj\Debug\Lab27.csproj.AssemblyReference.cache
+C:\Лабы\5 сем\SoftwareConstruction2\Lab27\obj\Debug\Lab27.csproj.SuggestedBindingRedirects.cache
+C:\Лабы\5 сем\SoftwareConstruction2\Lab27\obj\Debug\Lab27.csproj.CoreCompileInputs.cache
+C:\Лабы\5 сем\SoftwareConstruction2\Lab27\obj\Debug\Lab27.exe
+C:\Лабы\5 сем\SoftwareConstruction2\Lab27\obj\Debug\Lab27.pdb

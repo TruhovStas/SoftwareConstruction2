@@ -13,4 +13,7 @@
   <PropertyGroup>
     <ReferencePath>C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\bin\Debug\</ReferencePath>
   </PropertyGroup>
+  <PropertyGroup>
+    <EnableSecurityDebugging>false</EnableSecurityDebugging>
+  </PropertyGroup>
 </Project>
