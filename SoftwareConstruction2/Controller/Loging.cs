@@ -17,17 +17,17 @@ namespace SoftwareConstruction2.Controller
 
         public static void CreateObject(Product product)
         {
-            Log.Information("Был создан объект:\n" + product.Description + "\n");
+            Log.Information("Object was created:\n" + product.Description + "\n");
         }
 
         public static void WriteToFileObject(Product product, string path)
         {
-            Log.Information("объект:\n" + product.Description + "\nбыл записан в " + path + "\n");
+            Log.Information("Object :\n" + product.Description + "\nWas wrote in " + path + "\n");
         }
 
         public static void ReadFromFileObject(Product product, string path)
         {
-            Log.Information("объект:\n" + product.Description + "\nбыл считан из " + path + "\n");
+            Log.Information("Object:\n" + product.Description + "\nWas read from" + path + "\n");
         }
 
         public static void Exeption(Exception e)

@@ -17,6 +17,9 @@ using SoftwareConstruction2.Controller;
 using SoftwareConstruction2.Model.Products;
 using Microsoft.Win32;
 using System.IO;
+using System.Globalization;
+using System.Resources;
+using System.Text.RegularExpressions;
 
 namespace SoftwareConstruction2
 {
@@ -27,15 +30,29 @@ namespace SoftwareConstruction2
     {
         public MainWindow()
         {
+            Resource.Culture = CultureInfo.GetCultureInfo("en-US");
             Loging.LoggerInitialize();
             InitializeComponent();
-            //Environment.SetEnvironmentVariable()
+            TextInitialize();
+        }
+        
+        public void TextInitialize()
+        {
+            Button1.Content = Resource.outObjects;
+            Button2.Content = Resource.readFromFile;
+            Button3.Content = Resource.writeToFile;
+            Button4.Content = Resource.createObject;
+            Button5.Content = Resource.clear;
+            Button6.Content = Resource.addObject;
+            bin.Content = Resource.bin;
+            text.Content = Resource.text;
+            json.Content = Resource.json;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             RandomMouse.CreateMouse();
-            TextBox1.Text += "Объект успешно создан\n";
+            TextBox1.Text += Resource.createObjectSucces;
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -99,7 +116,7 @@ namespace SoftwareConstruction2
                 }
                 catch 
                 {
-                    TextBox1.Text = "Введите ID продукта";
+                    TextBox1.Text = Resource.enterProductId;
                 }
             }
         }
@@ -120,6 +137,25 @@ namespace SoftwareConstruction2
             catch (Exception ex) { Loging.Exeption(ex); }
             Factory factory = new Factory();
             ProductList.AddToList(factory.CreateProduct(product[0], product.GetRange(1, product.Count - 1)));
+        }
+
+        private void lang_Click(object sender, RoutedEventArgs e)
+        {
+            if(lang.Content.ToString() == "En")
+            {
+                TextBox1.Text = string.Empty;
+                lang.Content = "Ru";
+                Resource.Culture = CultureInfo.GetCultureInfo("ru-RU");
+                TextInitialize();
+
+            }
+            else if(lang.Content.ToString() == "Ru")
+            {
+                TextBox1.Text = string.Empty;
+                lang.Content = "En";
+                Resource.Culture = CultureInfo.GetCultureInfo("en-EN");
+                TextInitialize();
+            }
         }
     }
 }

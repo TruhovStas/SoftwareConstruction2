@@ -14,7 +14,7 @@ namespace SoftwareConstruction2.Model.Devices
         public int ButtonsAmount { get; set; }
         public override string GetDescription()
         {
-            return base.GetDescription() + $"\nConnection type: {ConnectionType}" + $"\nResponse time: {Response} ms.\nAmount of buttons: {ButtonsAmount}";
+            return base.GetDescription() + $"\n{Resource.connectionType}: {ConnectionType}" + $"\n{Resource.responseTime}: {Response} {Resource.ms}\n{Resource.amountOfButtons}: {ButtonsAmount}";
         }
         public override List<string> GetDescriptionInList()
         {

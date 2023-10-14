@@ -14,7 +14,7 @@ namespace SoftwareConstruction2.Model.Products.Components
         public int Threads { get; set; }
         public override string GetDescription()
         {
-            return base.GetDescription() + $"\nFrequency: {Frequency}\nCores amount: {Cores}\nThread amount: {Threads}";
+            return base.GetDescription() + $"\n{Resource.frequency}: {Frequency}\n{Resource.coresAmount}: {Cores}\n{Resource.threadAmount}: {Threads}";
         }
         public override List<string> GetDescriptionInList()
         { 

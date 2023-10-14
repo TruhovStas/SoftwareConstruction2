@@ -17,8 +17,8 @@ namespace SoftwareConstruction2.Model.Products.Components
         public int TensorCores { get; set; }
         public override string GetDescription()
         {
-            string rtx = RTX ? "\nRTX cores" + RTXCores.ToString() : "";
-            return base.GetDescription() + $"\nFrequency: {Frequency}\nVRAM: {VRAM}\nCuda cores: {CudaCores}\nTensor cores:{TensorCores}" + rtx;
+            string rtx = RTX ? "\n" + Resource.rtxCores + RTXCores.ToString() : "";
+            return base.GetDescription() + $"\n{Resource.frequency}: {Frequency}\n{Resource.vram}: {VRAM}\n{Resource.cudaCores}: {CudaCores}\n{Resource.cudaCores}:{TensorCores}" + rtx;
         }
         public override List<string> GetDescriptionInList()
         {

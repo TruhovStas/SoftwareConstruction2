@@ -14,7 +14,7 @@ namespace SoftwareConstruction2.Model.Products.Components
         public MemoryTypes MemoryType { get; set; }
         public override string GetDescription()
         {
-            return base.GetDescription() + $"\nFrequency: {Frequency}\nCapacity: {Capacity}\nMemory type: {MemoryType}";
+            return base.GetDescription() + $"\n{Resource.frequency}: {Frequency}\n{Resource.capacity}: {Capacity}\n{Resource.memoryType}: {MemoryType}";
         }
         public override List<string> GetDescriptionInList()
         {

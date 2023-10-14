@@ -1,31 +1,18 @@
-2023-10-14 14:31:25.901 +03:00 [INF] Был создан объект:
+2023-10-14 17:24:01.337 +03:00 [INF] Object was created:
 ID: 1
-Name: Apple-84463
-Price: 94 р.
-Manufacturer: Apple
-Connection type: USB
-Response time: 45 ms.
-Amount of buttons: 3
+Имя: Nvidia-22528
+Цена: 30 руб.
+Производитель: Nvidia
+Тип подключения: USB
+Время отклика: 18 мс.
+Количество кнопок: 8
 
-2023-10-14 14:31:33.163 +03:00 [INF] объект:
-ID: 1
-Name: AMD-40853
-Price: 26 р.
-Manufacturer: AMD
+2023-10-14 17:24:23.195 +03:00 [INF] Object was created:
+ID: 2
+Name: Samsung-47603
+Price: 12 $
+Manufacturer: Samsung
 Connection type: USB
-Response time: 75 ms.
-Amount of buttons: 8
-был считан из C:\Users\Kirill\Desktop\1.bin
-
-2023-10-14 14:31:45.826 +03:00 [INF] объект:
-ID: 1
-Name: Apple-84463
-Price: 94 р.
-Manufacturer: Apple
-Connection type: USB
-Response time: 45 ms.
-Amount of buttons: 3
-был записан в C:\Users\Kirill\Desktop\1.bin
-
-2023-10-14 14:32:15.332 +03:00 [ERR] Двоичный поток "0" не содержит допустимого двоичного заголовка BinaryHeader. Возможные причины: недопустимый поток или изменение версии объекта между сериализацией и десериализацией.
+Response time: 10 ms.
+Amount of buttons: 6
 

@@ -15,7 +15,7 @@ namespace SoftwareConstruction2.Model.Devices
         public override string GetDescription()
         {
             string rus = HasRussianKeys ? "+" : "-";
-            return base.GetDescription() + $"\nConnection type: {ConnectionType}" + $"\nKeyboard type: {KeyboardType}\nSize: {Size}%\nRussian keys: {rus}";
+            return base.GetDescription() + $"\n{Resource.connectionType}: {ConnectionType}" + $"\n{Resource.keyboardType}: {KeyboardType}\n{Resource.size}: {Size}%\n{Resource.russianKkeys}: {rus}";
 
         }
         public override List<string> GetDescriptionInList()

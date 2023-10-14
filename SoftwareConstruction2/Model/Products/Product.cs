@@ -16,7 +16,7 @@ namespace SoftwareConstruction2.Model.Products
         public string Manufacturer { get; set; }
         public virtual string GetDescription()
         {
-            return $"ID: {Id}\nName: {Name}\nPrice: {Price} р.\nManufacturer: {Manufacturer}";
+            return $"{Resource.id}: {Id}\n{Resource.name}: {Name}\n{Resource.price}: {Price} {Resource.currency}\n{Resource.manufacturer}: {Manufacturer}";
         }
 
         public virtual List<string> GetDescriptionInList()

@@ -35,3 +35,7 @@ C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\bin\Debug\Newto
 C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\bin\Debug\Serilog.xml
 C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\bin\Debug\Serilog.Sinks.File.pdb
 C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\bin\Debug\Serilog.Sinks.File.xml
+C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\obj\Debug\SoftwareConstruction2.Resource.resources
+C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\bin\Debug\ru-RU\SoftwareConstruction2.resources.dll
+C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\obj\Debug\SoftwareConstruction2.Resource.ru-RU.resources
+C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\obj\Debug\ru-RU\SoftwareConstruction2.resources.dll
