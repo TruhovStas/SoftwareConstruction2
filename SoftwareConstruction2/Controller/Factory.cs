@@ -1,13 +1,13 @@
 ﻿using SoftwareConstruction2.Model.Devices;
 using SoftwareConstruction2.Model.Products.Components;
+using SoftwareConstruction2.Model.Products;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ProductList;
 
-namespace SoftwareConstruction2.Conroller
+namespace SoftwareConstruction2.Controller
 {
     public class Factory
     {

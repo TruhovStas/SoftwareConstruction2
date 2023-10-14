@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace SoftwareConstruction2.Model.Devices
 {
+    [Serializable]
     public class Keyboard : Device
     {
         public KeyboardTypes KeyboardType { get; set; }
@@ -14,7 +15,7 @@ namespace SoftwareConstruction2.Model.Devices
         public override string GetDescription()
         {
             string rus = HasRussianKeys ? "+" : "-";
-            return base.GetDescription() + $"\nKeyboard type: {KeyboardType}\nSize: {Size}%\nRussian keys: {rus}";
+            return base.GetDescription() + $"\nConnection type: {ConnectionType}" + $"\nKeyboard type: {KeyboardType}\nSize: {Size}%\nRussian keys: {rus}";
 
         }
         public override List<string> GetDescriptionInList()

@@ -5,7 +5,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ProductList;
 
 namespace SoftwareConstruction2.Controller
 {
@@ -15,12 +14,12 @@ namespace SoftwareConstruction2.Controller
         {
             "Logitech", "Bloody", "AMD", "Intel", "Nvidia", "Apple", "Samsung", "Noname" 
         };
-        private static int IdCounter = 1;
+        private static int IdCounter = ProductList.GetAllProducts().Count + 1;
         private static Random ran = new Random();
         public static void CreateMouse()
         {
             string man = ManName[ran.Next(7)];
-            ProductList.ProductList.AddToList(new Mouse(IdCounter, RandomName(man), ran.Next(1, 100), man, ConnectionTypes.USB, ran.Next(1, 100), ran.Next(2, 10)));
+            ProductList.AddToList(new Mouse(IdCounter, RandomName(man), ran.Next(1, 100), man, ConnectionTypes.USB, ran.Next(1, 100), ran.Next(2, 10)));
             IdCounter++;
         }
         private static string RandomName(string man)

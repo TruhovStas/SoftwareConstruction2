@@ -15,9 +15,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using SoftwareConstruction2.Controller;
 using SoftwareConstruction2.Model.Products;
-using ProductList;
 using Microsoft.Win32;
-using SoftwareConstruction2.Conroller;
 using System.IO;
 
 namespace SoftwareConstruction2
@@ -30,6 +28,7 @@ namespace SoftwareConstruction2
         public MainWindow()
         {
             InitializeComponent();
+            //Environment.SetEnvironmentVariable()
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -40,40 +39,70 @@ namespace SoftwareConstruction2
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            if (TextBox1.Text == string.Empty)
+            try
+            {
+                TextBox1.Text = ProductList.GetProduct(int.Parse(TextBox1.Text)).Description;
+            }
+            catch
             {
                 TextBox1.Text = string.Empty;
-                foreach (Product i in ProductList.ProductList.GetAllProducts())
+                foreach (Product i in ProductList.GetAllProducts())
                 {
-                    TextBox1.Text += i.Description + "\n\n";
+                    if(i != null) TextBox1.Text += i.Description + "\n\n";
                 }
             }
-            else TextBox1.Text = ProductList.ProductList.GetProduct(int.Parse(TextBox1.Text)).Description;
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             OpenFileDialog fileDialog = new OpenFileDialog();
-            fileDialog.ShowDialog();
-            string path = fileDialog.FileName;
-            ProductList.ProductList.AddToList(FileReader.ReadFromTextFile(path));
+            if ((bool)fileDialog.ShowDialog())
+            {
+                string path = fileDialog.FileName;
+                if (text.IsChecked.Value)
+                {
+                    ProductList.AddToList(FileReader.ReadFromTextFile(path));
+                }
+                else if(bin.IsChecked.Value)
+                {
+                    ProductList.AddToList(FileReader.ReadFromBinFile(path));
+                }
+                else if(json.IsChecked.Value)
+                {
+                    ProductList.AddToList(FileReader.ReadFromJsonFile(path));
+                }
+            }
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            OpenFileDialog fileDialog = new OpenFileDialog();
-            fileDialog.ShowDialog();
-            string path = fileDialog.FileName;
-            FileReader.WriteToTextFile(ProductList.ProductList.GetProduct(int.Parse(TextBox1.Text)), path);
+            SaveFileDialog fileDialog = new SaveFileDialog();
+            if ((bool)fileDialog.ShowDialog())
+            {
+                try
+                {
+                    string path = fileDialog.FileName;
+                    if (text.IsChecked.Value)
+                    {
+                        FileReader.WriteToTextFile(ProductList.GetProduct(int.Parse(TextBox1.Text)), path);
+                    }
+                    else if (bin.IsChecked.Value)
+                    {
+                        FileReader.WriteToBinFile(ProductList.GetProduct(int.Parse(TextBox1.Text)), path);
+                    }
+                    else if (json.IsChecked.Value)
+                    {
+                        FileReader.WriteToJsonFile(ProductList.GetProduct(int.Parse(TextBox1.Text)), path);
+                    }
+
+                }
+                catch 
+                {
+                    TextBox1.Text = "Введите ID продукта";
+                }
+            }
         }
 
-        private void Button_Click_4(object sender, RoutedEventArgs e)
-        {
-            OpenFileDialog fileDialog = new OpenFileDialog();
-            fileDialog.ShowDialog();
-            string path = fileDialog.FileName;
-            ProductList.ProductList.AddToList(FileReader.ReadFromFile(path));
-        }
 
         private void Button_Click_5(object sender, RoutedEventArgs e)
         {
@@ -85,11 +114,11 @@ namespace SoftwareConstruction2
             List<string> product = new List<string>();
             try
             {
-                product = TextBox1.Text.Split('\n').ToList();
+                product = TextBox1.Text.Replace("\r", string.Empty).Split('\n').ToList();
             }
             catch { }
             Factory factory = new Factory();
-            ProductList.ProductList.AddToList(factory.CreateProduct(product[0], product.GetRange(1, product.Count - 1)));
+            ProductList.AddToList(factory.CreateProduct(product[0], product.GetRange(1, product.Count - 1)));
         }
     }
 }

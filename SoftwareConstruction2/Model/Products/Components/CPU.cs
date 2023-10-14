@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace SoftwareConstruction2.Model.Products.Components
 {
+    [Serializable]
     public class CPU : Components
     {
         public double Frequency { get; set; }

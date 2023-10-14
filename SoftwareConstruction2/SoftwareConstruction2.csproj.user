@@ -10,4 +10,7 @@
     <FallbackCulture>ru-RU</FallbackCulture>
     <VerifyUploadedFiles>false</VerifyUploadedFiles>
   </PropertyGroup>
+  <PropertyGroup>
+    <ReferencePath>C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\bin\Debug\</ReferencePath>
+  </PropertyGroup>
 </Project>

@@ -7,13 +7,14 @@ using System.Windows;
 
 namespace SoftwareConstruction2.Model.Devices
 {
+    [Serializable]
     public class Mouse : Device
     {
         public double Response { get; set; }
         public int ButtonsAmount { get; set; }
         public override string GetDescription()
         {
-            return base.GetDescription() + $"\nResponse time: {Response} ms.\nAmount of buttons: {ButtonsAmount}";
+            return base.GetDescription() + $"\nConnection type: {ConnectionType}" + $"\nResponse time: {Response} ms.\nAmount of buttons: {ButtonsAmount}";
         }
         public override List<string> GetDescriptionInList()
         {

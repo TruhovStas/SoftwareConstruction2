@@ -25,18 +25,17 @@ namespace ProductList
             productList.Remove(GetProduct(name));
         }
     }
-
+    [Serializable]
     public abstract class Product
     {
         public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get { return GetDescription(); } }
         public double Price { get; set; }
-        public double? Sale { get; set; }
         public string Manufacturer { get; set; }
         public virtual string GetDescription()
         {
-            return $"ID: {Id}\nName: {Name}\nPrice: {CalculateSale()} р.\nManufacturer: {Manufacturer}";
+            return $"ID: {Id}\nName: {Name}\nPrice: {Price} р.\nManufacturer: {Manufacturer}";
         }
 
         public virtual List<string> GetDescriptionInList()
@@ -52,14 +51,5 @@ namespace ProductList
             Id = id;
         }
 
-        public double CalculateSale()
-        {
-            if (Sale != null) return Price * (double)Sale;
-            else return Price;
-        }
-        public void ApplySale(double sale)
-        {
-            if (sale > 0 && sale < 100) Sale = sale / 100;
-        }
     }
 }
