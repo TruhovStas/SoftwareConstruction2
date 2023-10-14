@@ -14,15 +14,17 @@ namespace SoftwareConstruction2.Controller
     {
         public static Product ReadFromTextFile(string path)
         {
-            List<string> product = new List<string>();
+            List<string> productDisc = new List<string>();
             try
             {
                 string text = File.ReadAllText(path);
-                product = text.Split('\n').ToList();
+                productDisc = text.Split('\n').ToList();
             }
-            catch { }
+            catch(Exception e) { Loging.Exeption(e); }
             Factory factory = new Factory();
-            return factory.CreateProduct(product[0], product.GetRange(1, product.Count - 1));
+            Product product = factory.CreateProduct(productDisc[0], productDisc.GetRange(1, productDisc.Count - 1));
+            Loging.ReadFromFileObject(product, path);
+            return product;
 
         }
 
@@ -37,8 +39,9 @@ namespace SoftwareConstruction2.Controller
             try
             {
                 File.WriteAllText(path, text);
+                Loging.WriteToFileObject(product, path);
             }
-            catch { }
+            catch (Exception e) { Loging.Exeption(e); }
         }
 
         public static void WriteToBinFile(Product product, string path)
@@ -50,8 +53,9 @@ namespace SoftwareConstruction2.Controller
                 {
                     bf.Serialize(stream, product);
                 }
+                Loging.WriteToFileObject(product, path);
             }
-            catch { }
+            catch (Exception e) { Loging.Exeption(e); }
         }
 
         public static Product ReadFromBinFile(string path)
@@ -65,8 +69,9 @@ namespace SoftwareConstruction2.Controller
 
                     product = (Product)bf.Deserialize(stream);
                 }
+                Loging.ReadFromFileObject(product, path);
             }
-            catch { }
+            catch (Exception e) { Loging.Exeption(e); }
             return product;
         }
 
@@ -80,8 +85,9 @@ namespace SoftwareConstruction2.Controller
                     Formatting = Formatting.Indented
                 });
                 File.WriteAllText(path, json);
+                Loging.WriteToFileObject(product, path);
             }
-            catch { }
+            catch (Exception e) { Loging.Exeption(e); }
         }
 
 
@@ -94,9 +100,9 @@ namespace SoftwareConstruction2.Controller
                 {
                     TypeNameHandling = TypeNameHandling.All
                 });
-
+                Loging.ReadFromFileObject(product, path);
             }
-            catch { }
+            catch (Exception e) { Loging.Exeption(e); }
             return product;
         }
     }

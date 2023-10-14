@@ -19,7 +19,9 @@ namespace SoftwareConstruction2.Controller
         public static void CreateMouse()
         {
             string man = ManName[ran.Next(7)];
-            ProductList.AddToList(new Mouse(IdCounter, RandomName(man), ran.Next(1, 100), man, ConnectionTypes.USB, ran.Next(1, 100), ran.Next(2, 10)));
+            Mouse mouse = new Mouse(IdCounter, RandomName(man), ran.Next(1, 100), man, ConnectionTypes.USB, ran.Next(1, 100), ran.Next(2, 10));
+            ProductList.AddToList(mouse);
+            Loging.CreateObject(mouse);
             IdCounter++;
         }
         private static string RandomName(string man)

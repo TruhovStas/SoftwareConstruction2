@@ -27,6 +27,7 @@ namespace SoftwareConstruction2
     {
         public MainWindow()
         {
+            Loging.LoggerInitialize();
             InitializeComponent();
             //Environment.SetEnvironmentVariable()
         }
@@ -116,7 +117,7 @@ namespace SoftwareConstruction2
             {
                 product = TextBox1.Text.Replace("\r", string.Empty).Split('\n').ToList();
             }
-            catch { }
+            catch (Exception ex) { Loging.Exeption(ex); }
             Factory factory = new Factory();
             ProductList.AddToList(factory.CreateProduct(product[0], product.GetRange(1, product.Count - 1)));
         }

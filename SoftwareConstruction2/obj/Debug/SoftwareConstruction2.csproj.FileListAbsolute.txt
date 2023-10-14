@@ -32,3 +32,6 @@ C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\obj\Debug\View\
 C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\obj\Debug\View\MainWindow.baml
 C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\obj\Debug\SoftwareConstruction2.csproj.CopyComplete
 C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\bin\Debug\Newtonsoft.Json.xml
+C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\bin\Debug\Serilog.xml
+C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\bin\Debug\Serilog.Sinks.File.pdb
+C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\bin\Debug\Serilog.Sinks.File.xml
