@@ -39,3 +39,8 @@ C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\obj\Debug\Softw
 C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\bin\Debug\ru-RU\SoftwareConstruction2.resources.dll
 C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\obj\Debug\SoftwareConstruction2.Resource.ru-RU.resources
 C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\obj\Debug\ru-RU\SoftwareConstruction2.resources.dll
+C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\bin\Debug\SoftwareConstruction2.exe.manifest
+C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\bin\Debug\SoftwareConstruction2.application
+C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\obj\Debug\SoftwareConstruction2.TrustInfo.xml
+C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\obj\Debug\SoftwareConstruction2.exe.manifest
+C:\Лабы\5 сем\SoftwareConstruction2\SoftwareConstruction2\obj\Debug\SoftwareConstruction2.application
