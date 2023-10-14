@@ -24,3 +24,5 @@ C:\Лабы\5 сем\SoftwareConstruction2\UnitTestProject\obj\Debug\UnitTestPro
 C:\Лабы\5 сем\SoftwareConstruction2\UnitTestProject\obj\Debug\UnitTestProject.pdb
 C:\Лабы\5 сем\SoftwareConstruction2\UnitTestProject\bin\Debug\ProductList.dll
 C:\Лабы\5 сем\SoftwareConstruction2\UnitTestProject\bin\Debug\ProductList.pdb
+C:\Лабы\5 сем\SoftwareConstruction2\UnitTestProject\bin\Debug\Newtonsoft.Json.dll
+C:\Лабы\5 сем\SoftwareConstruction2\UnitTestProject\bin\Debug\Newtonsoft.Json.xml
